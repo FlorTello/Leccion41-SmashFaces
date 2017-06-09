@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Gas Finder</title>
+    <title>SmashFaces</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,20 +13,37 @@
   <body>
   <div class="container">
      <div class="row">
-       <div class="input-field col s12">
+       <div class="input-field col s8">
+        <label for="">Elige tu Sede</label>
         <select>
-          <option value="" disabled selected>Choose your option</option>
-          <option value="1">Option 1</option>
-          <option value="2">Option 2</option>
-          <option value="3">Option 3</option>
+          <option value="" disabled selected>Elige una opción</option>
+          <option value="1">Lima</option>
+          <option value="2">México</option>
         </select>
       </div>
-
+      <div class="col-4">
+        <span class="label">Puntos</span>
+        <span class="Puntos"></span>
+      </div>
+     </div>
+     <div class="row">
+       <div class="col s5">
+         <img class="foto" src="images/fotos/mexico/Alma Patricia Jimenez.JPG" alt="" width="300">
+       </div>
+       <div class="col s7">
+          <div class="container">
+            <label for="">Ingresa s nombre</label><br>
+            <input type="text" name="" value="" placeholder="Nombre">
+            <input type="button" name="" value="COMPROBAR">
+          </div>
+       </div>
      </div>
    </div>
 
-
     <script type="text/javascript" src = "js/jquery-3.2.1.min.js"></script>
+    <script src="peru.js"></script>
+    <script src="mexico.js"></script>
+    <script src="js/app.js"></script>
     <script src="js/utils/get-json.js"></script>
     <script src="js/utils/filters.js"></script>
     <script src="js/components/header.js"></script>
