@@ -1,9 +1,6 @@
 body{
-  background-color: #eee;
-  }
-* {
-  margin:0px;
-  padding:0px;
+  margin:0;
+  padding:0;
   box-sizing: border-box;
-  font-family: 'Rokkitt', serif;
+  /*font-family: 'Rokkitt', serif;*/
 }

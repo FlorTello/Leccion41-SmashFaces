@@ -7,7 +7,7 @@ const state = {
 
 $( _ => {
 
-  getJSON('stations.json', (err, json) => {
+  getJSON('peru.json', (err, json) => {
 
     if (err) { return alert(err.message);}
 
