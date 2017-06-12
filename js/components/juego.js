@@ -10,10 +10,13 @@ const Juego = (update,coder) => {
   const label = $('<label for="">Ingresa s nombre</label><br>');
   const input = $('<input type="text" class="text_name" name="" value="" placeholder="Nombre">');
   const button = $('<input type="button" name="" value="COMPROBAR">');
+  const mensaje = $("<label class = 'mensaje'> </label>");
+
 
   container.append(label);
   container.append(input);
   container.append(button);
+  container.append(mensaje);
 
   col2.append(container);
 
@@ -25,9 +28,9 @@ const Juego = (update,coder) => {
   button.on('click',(e)=>{
     validarRespuesta(input.val(),state.selectedCoder.name,update);
     // setInterval(() => {
-    generarAleatorio(state.coders);
     state.intentos -= 1;
     if(state.intentos == 0){
+      generarAleatorio(state.coders);
       if(state.selectedCoder !== null){
         reRender($('.juego'),state.selectedCoder,update);
       }
