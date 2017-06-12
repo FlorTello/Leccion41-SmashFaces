@@ -15,22 +15,15 @@ const state = {
   coders: null,
   selectedCoder: null,
   punto: 0,
-  intentos: 5
+  intentos: 5,
+  acierto:0,
 };
 
 $( _ => {
-
-  // getJSON('stations.json', (err, json) => {
-  //
-  //   if (err) { return alert(err.message);}
-  //
-  //   state.stations = json;
 
     const root = $('.root');
     render(root);
 
 
-
-  // });
 
 });

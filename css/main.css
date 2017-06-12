@@ -5,15 +5,7 @@
   font-family: 'Roboto', sans-serif;
 }
 
-header {
-  color: #fff;
-  font-size: 18px;
-  height: 56px;
-  line-height: 56px;
-  padding-left: 16px;
-  background-color: #F44336;
-}
-
-header .fa-chevron-left {
-  margin-right: 16px;
+.container-juego{
+  min-height: 100vh;
+  background: #333333;
 }
