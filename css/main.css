@@ -6,6 +6,13 @@
 }
 
 .container-juego{
-  min-height: 100vh;
+  line-height: 36px;
+  min-height: 50vh;
   background: #333333;
+}
+.container-juego *{
+  margin-top: 15px;
+}
+.text-white{
+  color: #fff;
 }

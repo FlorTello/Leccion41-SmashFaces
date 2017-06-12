@@ -16,9 +16,9 @@ const validarRespuesta = (input,respuesta,update) => {
     state.intentos = 5;
     $('.mensaje').text("Excelente");
   }else{
-    $('.mensaje').text("Sigue Intentando");
     state.acierto = 0;
     state.intentos -= 1;
+    $('.mensaje').text("Sigue Intentando te quedan "+ state.intentos + " intentos");
   }
   $('.puntos').html(state.punto + " puntos")
 };
