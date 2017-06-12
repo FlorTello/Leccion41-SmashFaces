@@ -40,12 +40,6 @@ const Header = (update) => {
       if (err) { return alert(err.message);}
       state.coders = json;
       generarAleatorio(state.coders);
-      // setInterval(() => {
-      //   generarAleatorio(state.coders);
-      //   if(state.selectedCoder !== null){
-      //     reRender(juego,state.selectedCoder,update);
-      //   }
-      // }, 5000);
       if(state.selectedCoder !== null){
         reRender(juego,state.selectedCoder,update);
       }

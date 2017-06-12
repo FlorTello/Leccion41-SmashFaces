@@ -33,7 +33,7 @@ const Juego = (update,coder) => {
       state.intentos = 5;
       generarAleatorio(state.coders);
       if(state.selectedCoder !== null){
-        setTimeout(_=>{reRender($('.juego'),state.selectedCoder,update);}, 2000);
+        setTimeout(_=>{reRender($('.juego'),state.selectedCoder,update);}, 1000);
       }
     }
 
