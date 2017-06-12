@@ -9,6 +9,7 @@ const getJSON = (url, cb) => {
 
     if (xhr.status !== 200) {
       return cb(new Error('Error loading JSON from ' + url + '(' + xhr.status + ')'));
+
     }
 
     cb(null, xhr.response);
